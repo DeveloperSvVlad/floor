@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+<meta name="robots" content="">
+<link rel="short icon" href="">
+<link rel="stylesheet" href="libs/swiper.min.css">
+<link rel="stylesheet" href="libs/select2.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+  <title>О бизнес центре</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- ?Подключение Header -->
+    
+
+<div class="popup js-popup-message choice-location">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+          <div class="popup__content">
+            <button class="popup__btn-close"></button>
+            <div class="popup__head mb-30">
+                <h4 class="popup__title">ОБРАТНАЯ СВЯЗЬ</h4>
+                <p>Вы можете задать свой вопрос в форме ниже. Наши специалисты вскоре с вами свяжутся и проконсультируют по всем вопросам</p>
+            </div>
+            <form class="popup__form form mb-20" action="#">  
+                <div class="form__wrapper mb-30">
+                    <div class="form__row">
+                        <div class="form__item">
+                            <div class="form__input">
+                                <input class="form__control form-control" placeholder="Имя" type="text">
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <div class="form__input">
+                                <select id="choice-popup-contry">
+                                <option data-countryflag="russia">Россия</option>
+                                <option data-countryflag="uzbekistan">Узбекистан</option>
+                            </select>
+                            <input class="form__control form-control" placeholder="+7 (999) 999-99-99" type="tel">
+                        </div>
+                        </div>
+                        <div class="form__item">
+                                <div class="form__input">
+                                    <input class="form__control form-control" placeholder="Ваш вопрос" type="text">
+                                </div>
+                        </div>
+                    
+                    </div>
+                </div>  
+                <button class="form__btn btn btn-any">Отправить заявку</button>
+            </form>
+            <div class="popup__any-text">
+                Нажимая кнопку “Отправить заявку” вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ?Основной контент -->
+    <main class="main main--ind">
+      <div class="content-wrapper">
+        <!--? breadcrumb -->
+        <div class="breadcrumb mb-30">
+          <div class="container">
+            <nav aria-label="breadcrumb" class="breadcrumb__nav">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb__item active">Контакты</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!--? Contacts -->
+        <section class="contacts pb-60">
+            <div class="container">
+                <div class="head mb-40">
+                    <h1 class="head__title title title-primary">Контакты</h1>
+                    <p>Для связи с нами позвоните по указанному номеру телефона или задайте свой вопрос прямо на сайте</p>
+                </div>
+                <div class="contacts__wrapper">
+                    <div class="contacts__row">
+                        <div class="contacts__item">
+                            <div class="item-contacts">
+                                <div class="item-contacts__body">
+                                    <div class="item-contacts__name">Мария Сафонова</div>
+                                    <div class="item-contacts__center">
+                                        <p> Руководитель отдела аренды,</p>
+                                        <a href="mailto:info@algorithm-centre.ru">info@algorithm-centre.ru</a>
+                                    </div>
+                                    <div class="item-contacts__block">
+                                        <p class="item-contacts__label">Мы на связи</p>
+                                        <a class="item-contacts__link" href="tel:+7(495)9090080">+7 (495) 909 00 80</a>
+                                    </div>
+                                    <button class="item-contacts__btn btn btn-others" data-popup="js-popup-message">Отправить сообщение</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="item-contacts">
+                                <div class="item-contacts__body">
+                                    <div class="item-contacts__name">Александр Новосильцев</div>
+                                    <div class="item-contacts__center">
+                                        <p> Руководитель отдела рекламы,</p>
+                                        <a href="mailto:info@algorithm-centre.ru">info@algorithm-centre.ru</a>
+                                    </div>
+                                    <div class="item-contacts__block">
+                                        <p class="item-contacts__label">Мы на связи</p>
+                                        <a class="item-contacts__link" href="tel:+7(495)9090080">+7 (495) 909 00 80</a>
+                                    </div>
+                                    <button class="item-contacts__btn btn btn-others" data-popup="js-popup-message">Отправить сообщение</button>
+                                </div>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      </div>
+
+      <div class="main-any-wrap">
+        <div class="content-wrapper">
+            <!--? Maps -->
+            <section class="maps pb-60">
+                <div class="container">
+                    <div class="head mb-20">
+                        <h3 class="head__title title title-any">часы работы</h3>
+                        <p>Пн-Сб: 08:00—20:00</p>
+                    </div>
+                    <div class="maps__wrapper">
+                        <div class="map mb-20" id="map">
+    
+                        </div>
+                        <div class="maps__location"><span class="i-location"></span>Ул. Академика Пилюгина, д. 22</div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!--? Location -->
+            <section class="location mb-60">
+                <div class="container">
+                    <div class="location__row">
+                        <div class="location__content">
+                            <div class="head mb-30">
+                                <h4 class="head__title title title-any">расположение</h4>
+                            </div>
+                            <div class="location__text">
+                                <p> Бизнес-центр «Алгоритм» удален от шумного центра столицы и удобно расположен по отношению к главным транспортным магистралям Юго-Запада, благодаря чему как до центра, так и до МКАД можно добраться всего за считанные минуты.</p>
+                                <p>Для удобства арендаторов организовано движение корпоративного транспорта от м. Новые Черемушки до бизнес центра</p>
+                            </div>
+                        </div>
+                        <div class="location__info info-location">
+                            <div class="info-location__block">
+                                <div class="info-location__item">
+                                    <div class="info-location__icon">
+                                        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.968 9.46333L10.464 0L7.5 5.53201L4.548 0L1.032 9.46333H0V10.8976H5.304V9.46333H4.512L5.28 7.1071L7.5 11L9.72 7.1071L10.488 9.46333H9.696V10.8976H15V9.46333H13.968Z" fill="#98D75B"/>
+                                        </svg>
+                                    </div>
+                                        Проспект Вернадского — 1,8 км
+                                </div>
+                                <div class="info-location__item">
+                                    <div class="info-location__icon">
+                                        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.968 9.46333L10.464 0L7.5 5.53201L4.548 0L1.032 9.46333H0V10.8976H5.304V9.46333H4.512L5.28 7.1071L7.5 11L9.72 7.1071L10.488 9.46333H9.696V10.8976H15V9.46333H13.968Z" fill="#98D75B"/>
+                                        </svg>
+                                    </div>
+                                        Новые Черемушки — 1,2 км
+                                </div>
+                                <div class="info-location__item">
+                                    <div class="info-location__icon">
+                                        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.968 9.46333L10.464 0L7.5 5.53201L4.548 0L1.032 9.46333H0V10.8976H5.304V9.46333H4.512L5.28 7.1071L7.5 11L9.72 7.1071L10.488 9.46333H9.696V10.8976H15V9.46333H13.968Z" fill="#98D75B"/>
+                                        </svg>
+                                    </div>
+                                        Калужская — 1,4 км
+                                </div>
+                                <div class="info-location__item">
+                                    <div class="info-location__icon">
+                                        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.968 9.46333L10.464 0L7.5 5.53201L4.548 0L1.032 9.46333H0V10.8976H5.304V9.46333H4.512L5.28 7.1071L7.5 11L9.72 7.1071L10.488 9.46333H9.696V10.8976H15V9.46333H13.968Z" fill="#98D75B"/>
+                                        </svg>
+                                    </div>
+                                        ул. Новаторов — 500 м
+                                </div>
+                            </div>
+                            <div class="info-location__block">
+                                <div class="info-location__item">
+                                    <div class="info-location__icon">
+                                        <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.76525 4.75295H11.2348C11.3494 4.75295 11.4423 4.65799 11.4423 4.54084C11.4423 4.4237 11.3494 4.32874 11.2348 4.32874H1.76525C1.65068 4.32874 1.5578 4.4237 1.5578 4.54084C1.5578 4.65799 1.65068 4.75295 1.76525 4.75295V4.75295Z" fill="white"/>
+                                            <path d="M12.8194 5.31968L12.2831 4.45625L12.0822 3.63117H12.516C12.6305 3.63117 12.7234 3.53621 12.7234 3.41906C12.7234 3.30192 12.6305 3.20695 12.516 3.20695H11.9789L11.4377 0.984188C11.3033 0.432307 10.7624 0 10.2062 0H2.79384C2.23763 0 1.69667 0.432307 1.5623 0.984188L1.02111 3.20695H0.484043C0.369477 3.20695 0.276596 3.30192 0.276596 3.41906C0.276596 3.53621 0.369477 3.63117 0.484043 3.63117H0.9178L0.716909 4.45625L0.180589 5.31971C0.0776404 5.48549 0 5.7586 0 5.95496V9.02738C0 9.14452 0.0928808 9.23949 0.207447 9.23949H0.276596V10.7879C0.276596 10.905 0.369477 11 0.484043 11H2.66669C2.78125 11 2.87413 10.905 2.87413 10.7879V9.87582C2.87413 9.75868 2.78125 9.66371 2.66669 9.66371C2.55212 9.66371 2.45924 9.75868 2.45924 9.87582V10.5758H0.691489V9.23949H3.6496C3.65018 9.23949 9.35342 9.23949 9.35342 9.23949C9.3553 9.23949 12.3085 9.23949 12.3085 9.23949V10.5758H10.5408V9.87582C10.5408 9.75868 10.4479 9.66371 10.3333 9.66371C10.2187 9.66371 10.1259 9.75868 10.1259 9.87582V10.7879C10.1259 10.905 10.2187 11 10.3333 11H12.516C12.6305 11 12.7234 10.905 12.7234 10.7879V9.23949H12.7926C12.9071 9.23949 13 9.14452 13 9.02738V5.95496C13 5.7586 12.9224 5.48549 12.8194 5.31968V5.31968ZM0.414894 5.95496C0.414894 5.83923 0.470157 5.64483 0.530843 5.54714L1.0852 4.65464C1.09714 4.63538 1.106 4.61429 1.11139 4.59217L1.96491 1.08665C2.05234 0.727564 2.43194 0.424219 2.79384 0.424219H10.2062C10.5681 0.424219 10.9477 0.727592 11.0351 1.08668L11.8886 4.59214C11.894 4.61426 11.9028 4.63536 11.9148 4.65462L12.4691 5.54712C12.5298 5.64483 12.5851 5.83923 12.5851 5.95496V8.81527H9.49456L8.99351 7.53334C8.96203 7.45277 8.88575 7.39994 8.80089 7.39994H4.19911C4.11425 7.39994 4.03797 7.45277 4.00649 7.53334L3.50544 8.81527H0.414894V5.95496V5.95496ZM9.04778 8.81527H3.95222L4.33962 7.82415H8.66038L9.04778 8.81527V8.81527Z" fill="white"/>
+                                            <path d="M1.03734 7.7534H1.8179C2.43628 7.7534 2.93941 7.23899 2.93941 6.60668C2.93941 5.9744 2.43631 5.45996 1.8179 5.45996H1.19055C1.07598 5.45996 0.983101 5.55493 0.983101 5.67207C0.983101 5.78921 1.07598 5.88418 1.19055 5.88418H1.8179C2.20751 5.88418 2.52451 6.20828 2.52451 6.60668C2.52451 7.00508 2.20754 7.32918 1.8179 7.32918H1.03734C0.922776 7.32918 0.829895 7.42415 0.829895 7.54129C0.829895 7.65843 0.922776 7.7534 1.03734 7.7534V7.7534Z" fill="white"/>
+                                            <path d="M10.0607 6.60668C10.0607 7.23899 10.5638 7.7534 11.1822 7.7534H11.9627C12.0773 7.7534 12.1702 7.65843 12.1702 7.54129C12.1702 7.42415 12.0773 7.32918 11.9627 7.32918H11.1822C10.7926 7.32918 10.4756 7.00508 10.4756 6.60668C10.4756 6.20831 10.7925 5.88418 11.1822 5.88418H11.8096C11.9241 5.88418 12.017 5.78921 12.017 5.67207C12.017 5.55493 11.9241 5.45996 11.8096 5.45996H11.1822C10.5638 5.45996 10.0607 5.97437 10.0607 6.60668V6.60668Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    5 минут езды от Ленинского пр-та 
+                                </div>
+                                <div class="info-location__item">
+                                    <div class="info-location__icon">
+                                        <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.76525 4.75295H11.2348C11.3494 4.75295 11.4423 4.65799 11.4423 4.54084C11.4423 4.4237 11.3494 4.32874 11.2348 4.32874H1.76525C1.65068 4.32874 1.5578 4.4237 1.5578 4.54084C1.5578 4.65799 1.65068 4.75295 1.76525 4.75295V4.75295Z" fill="white"/>
+                                            <path d="M12.8194 5.31968L12.2831 4.45625L12.0822 3.63117H12.516C12.6305 3.63117 12.7234 3.53621 12.7234 3.41906C12.7234 3.30192 12.6305 3.20695 12.516 3.20695H11.9789L11.4377 0.984188C11.3033 0.432307 10.7624 0 10.2062 0H2.79384C2.23763 0 1.69667 0.432307 1.5623 0.984188L1.02111 3.20695H0.484043C0.369477 3.20695 0.276596 3.30192 0.276596 3.41906C0.276596 3.53621 0.369477 3.63117 0.484043 3.63117H0.9178L0.716909 4.45625L0.180589 5.31971C0.0776404 5.48549 0 5.7586 0 5.95496V9.02738C0 9.14452 0.0928808 9.23949 0.207447 9.23949H0.276596V10.7879C0.276596 10.905 0.369477 11 0.484043 11H2.66669C2.78125 11 2.87413 10.905 2.87413 10.7879V9.87582C2.87413 9.75868 2.78125 9.66371 2.66669 9.66371C2.55212 9.66371 2.45924 9.75868 2.45924 9.87582V10.5758H0.691489V9.23949H3.6496C3.65018 9.23949 9.35342 9.23949 9.35342 9.23949C9.3553 9.23949 12.3085 9.23949 12.3085 9.23949V10.5758H10.5408V9.87582C10.5408 9.75868 10.4479 9.66371 10.3333 9.66371C10.2187 9.66371 10.1259 9.75868 10.1259 9.87582V10.7879C10.1259 10.905 10.2187 11 10.3333 11H12.516C12.6305 11 12.7234 10.905 12.7234 10.7879V9.23949H12.7926C12.9071 9.23949 13 9.14452 13 9.02738V5.95496C13 5.7586 12.9224 5.48549 12.8194 5.31968V5.31968ZM0.414894 5.95496C0.414894 5.83923 0.470157 5.64483 0.530843 5.54714L1.0852 4.65464C1.09714 4.63538 1.106 4.61429 1.11139 4.59217L1.96491 1.08665C2.05234 0.727564 2.43194 0.424219 2.79384 0.424219H10.2062C10.5681 0.424219 10.9477 0.727592 11.0351 1.08668L11.8886 4.59214C11.894 4.61426 11.9028 4.63536 11.9148 4.65462L12.4691 5.54712C12.5298 5.64483 12.5851 5.83923 12.5851 5.95496V8.81527H9.49456L8.99351 7.53334C8.96203 7.45277 8.88575 7.39994 8.80089 7.39994H4.19911C4.11425 7.39994 4.03797 7.45277 4.00649 7.53334L3.50544 8.81527H0.414894V5.95496V5.95496ZM9.04778 8.81527H3.95222L4.33962 7.82415H8.66038L9.04778 8.81527V8.81527Z" fill="white"/>
+                                            <path d="M1.03734 7.7534H1.8179C2.43628 7.7534 2.93941 7.23899 2.93941 6.60668C2.93941 5.9744 2.43631 5.45996 1.8179 5.45996H1.19055C1.07598 5.45996 0.983101 5.55493 0.983101 5.67207C0.983101 5.78921 1.07598 5.88418 1.19055 5.88418H1.8179C2.20751 5.88418 2.52451 6.20828 2.52451 6.60668C2.52451 7.00508 2.20754 7.32918 1.8179 7.32918H1.03734C0.922776 7.32918 0.829895 7.42415 0.829895 7.54129C0.829895 7.65843 0.922776 7.7534 1.03734 7.7534V7.7534Z" fill="white"/>
+                                            <path d="M10.0607 6.60668C10.0607 7.23899 10.5638 7.7534 11.1822 7.7534H11.9627C12.0773 7.7534 12.1702 7.65843 12.1702 7.54129C12.1702 7.42415 12.0773 7.32918 11.9627 7.32918H11.1822C10.7926 7.32918 10.4756 7.00508 10.4756 6.60668C10.4756 6.20831 10.7925 5.88418 11.1822 5.88418H11.8096C11.9241 5.88418 12.017 5.78921 12.017 5.67207C12.017 5.55493 11.9241 5.45996 11.8096 5.45996H11.1822C10.5638 5.45996 10.0607 5.97437 10.0607 6.60668V6.60668Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    15 минут езды от ТТК
+                                </div>
+                                <div class="info-location__item">
+                                    <div class="info-location__icon">
+                                        <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.76525 4.75295H11.2348C11.3494 4.75295 11.4423 4.65799 11.4423 4.54084C11.4423 4.4237 11.3494 4.32874 11.2348 4.32874H1.76525C1.65068 4.32874 1.5578 4.4237 1.5578 4.54084C1.5578 4.65799 1.65068 4.75295 1.76525 4.75295V4.75295Z" fill="white"/>
+                                            <path d="M12.8194 5.31968L12.2831 4.45625L12.0822 3.63117H12.516C12.6305 3.63117 12.7234 3.53621 12.7234 3.41906C12.7234 3.30192 12.6305 3.20695 12.516 3.20695H11.9789L11.4377 0.984188C11.3033 0.432307 10.7624 0 10.2062 0H2.79384C2.23763 0 1.69667 0.432307 1.5623 0.984188L1.02111 3.20695H0.484043C0.369477 3.20695 0.276596 3.30192 0.276596 3.41906C0.276596 3.53621 0.369477 3.63117 0.484043 3.63117H0.9178L0.716909 4.45625L0.180589 5.31971C0.0776404 5.48549 0 5.7586 0 5.95496V9.02738C0 9.14452 0.0928808 9.23949 0.207447 9.23949H0.276596V10.7879C0.276596 10.905 0.369477 11 0.484043 11H2.66669C2.78125 11 2.87413 10.905 2.87413 10.7879V9.87582C2.87413 9.75868 2.78125 9.66371 2.66669 9.66371C2.55212 9.66371 2.45924 9.75868 2.45924 9.87582V10.5758H0.691489V9.23949H3.6496C3.65018 9.23949 9.35342 9.23949 9.35342 9.23949C9.3553 9.23949 12.3085 9.23949 12.3085 9.23949V10.5758H10.5408V9.87582C10.5408 9.75868 10.4479 9.66371 10.3333 9.66371C10.2187 9.66371 10.1259 9.75868 10.1259 9.87582V10.7879C10.1259 10.905 10.2187 11 10.3333 11H12.516C12.6305 11 12.7234 10.905 12.7234 10.7879V9.23949H12.7926C12.9071 9.23949 13 9.14452 13 9.02738V5.95496C13 5.7586 12.9224 5.48549 12.8194 5.31968V5.31968ZM0.414894 5.95496C0.414894 5.83923 0.470157 5.64483 0.530843 5.54714L1.0852 4.65464C1.09714 4.63538 1.106 4.61429 1.11139 4.59217L1.96491 1.08665C2.05234 0.727564 2.43194 0.424219 2.79384 0.424219H10.2062C10.5681 0.424219 10.9477 0.727592 11.0351 1.08668L11.8886 4.59214C11.894 4.61426 11.9028 4.63536 11.9148 4.65462L12.4691 5.54712C12.5298 5.64483 12.5851 5.83923 12.5851 5.95496V8.81527H9.49456L8.99351 7.53334C8.96203 7.45277 8.88575 7.39994 8.80089 7.39994H4.19911C4.11425 7.39994 4.03797 7.45277 4.00649 7.53334L3.50544 8.81527H0.414894V5.95496V5.95496ZM9.04778 8.81527H3.95222L4.33962 7.82415H8.66038L9.04778 8.81527V8.81527Z" fill="white"/>
+                                            <path d="M1.03734 7.7534H1.8179C2.43628 7.7534 2.93941 7.23899 2.93941 6.60668C2.93941 5.9744 2.43631 5.45996 1.8179 5.45996H1.19055C1.07598 5.45996 0.983101 5.55493 0.983101 5.67207C0.983101 5.78921 1.07598 5.88418 1.19055 5.88418H1.8179C2.20751 5.88418 2.52451 6.20828 2.52451 6.60668C2.52451 7.00508 2.20754 7.32918 1.8179 7.32918H1.03734C0.922776 7.32918 0.829895 7.42415 0.829895 7.54129C0.829895 7.65843 0.922776 7.7534 1.03734 7.7534V7.7534Z" fill="white"/>
+                                            <path d="M10.0607 6.60668C10.0607 7.23899 10.5638 7.7534 11.1822 7.7534H11.9627C12.0773 7.7534 12.1702 7.65843 12.1702 7.54129C12.1702 7.42415 12.0773 7.32918 11.9627 7.32918H11.1822C10.7926 7.32918 10.4756 7.00508 10.4756 6.60668C10.4756 6.20831 10.7925 5.88418 11.1822 5.88418H11.8096C11.9241 5.88418 12.017 5.78921 12.017 5.67207C12.017 5.55493 11.9241 5.45996 11.8096 5.45996H11.1822C10.5638 5.45996 10.0607 5.97437 10.0607 6.60668V6.60668Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    20 минут езды от Садового кольца 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--? Info -->
+            <section class="info">
+                <div class="info__top">
+                    <div class="container">
+                    <div class="info__top-row">
+                        <div class="info__logo logo">
+                        <a href="index.html" class="logo__wrap">
+                            <img src="img/logo.png" width="170" height="77" alt="">
+                        </a>
+                        </div>
+                        <nav class="info__nav nav-info">
+                        <div class="nav-info__row">
+                            <div class="nav-info__item">
+                            <a href="#">О центре</a>
+                            <a href="#">Аренда и реклама</a>
+                            </div>
+                            <div class="nav-info__item">
+                            <a href="#">Часы работы</a>
+                            <a href="#">Контакты</a>
+                            </div>
+                            <div class="nav-info__item">
+                            <a href="#">Как добраться?</a>
+                            <a href="#">Паркинг</a>
+                            </div>
+                        </div>
+                        </nav>
+                    </div>
+                </div>
+
+                </div>   
+                <div class="info__bottom-row">
+                    <div class="info__item">
+                    <div class="info__item-block">
+                        <span class="info__item-icon i-location"></span>
+                        <p>Ул. Академика Пилюгина, д. 22</p>
+                    </div>
+                    </div>
+                    <div class="info__item">
+                    <div class="info__item-block">
+                        <span class="info__item-icon i-convert"></span>
+                        <a href="mailto:info@algorithm-centre.ru">info@algorithm-centre.ru</a>
+                    </div>
+                    </div>
+                    <div class="info__item">
+                    <a href="tel:+7(495)9090080" class="info__item-tel">+7 (495) 909 00 80</a>
+                    </div>
+                    <div class="info__item info__item--none">
+                        <div class="social">
+                        <a href="#" class="social__item"><span class="i-telegram"></span></a>
+                        <a href="#" class="social__item"><span class="i-vk"></span></a>
+                        <a href="#" class="social__item"><span class="i-twitter"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+        </div>
+      </div>
+    </main>
+    <!-- ?Подключение Footer -->
+    <footer class="footer">
+    <div class="container">
+        
+    </div>
+</footer>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=b6a870ec-d914-424a-a003-b2d702a5d3db&amp;lang=ru_RU" type="text/javascript"></script>
+<script src="libs/jquery.maphilight.js"></script>
+<script src="libs/select2.min.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+ <script >
+    var myMap;
+    ymaps.ready(init);
+    function init() {
+        myMap = new ymaps.Map('map', {
+            center: [41.28496400103806, 69.25303541677091], 
+            zoom: 17, 
+          }, 
+          {
+            searchControlProvider: 'yandex#search'
+          });
+         
+           myCollectionPin = new ymaps.GeoObjectCollection({}, {
+              iconLayout: 'default#image',
+              iconImageHref: 'img/metka.png',
+              iconImageSize: [40, 55],
+          });
+           var mainLocation = [
+             {
+              coords: [41.28496400103806, 69.25303541677091],
+              hintContent: 'Алгоритм',
+              ballonContentText: 'Алгоритм'
+             },
+          ]
+          mainLocation.forEach(el => {
+            var mark = new ymaps.Placemark(el.coords, {
+              hintContent: el.hintContent,
+              balloonContent: `<span class="text">${el.ballonContentText}</span>`,
+            });
+            myCollectionPin.add(mark)
+          });
+          myMap.geoObjects.add(myCollectionPin);  
+      }
+</script> 
+</body>
+
+</html>

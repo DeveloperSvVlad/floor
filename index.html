@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="">
+<meta name="robots" content="">
+<link rel="short icon" href="">
+<link rel="stylesheet" href="libs/swiper.min.css">
+<link rel="stylesheet" href="libs/select2.min.css">
+<link rel="stylesheet" href="css/style.min.css">
+  <title>Аренда</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- ?Подключение Header -->
+    
+
+<div class="popup js-popup-message choice-location">
+    <div class="popup__wrapper">
+        <div class="popup__inner">
+          <div class="popup__content">
+            <button class="popup__btn-close"></button>
+            <div class="popup__head mb-30">
+                <h4 class="popup__title">ОБРАТНАЯ СВЯЗЬ</h4>
+                <p>Вы можете задать свой вопрос в форме ниже. Наши специалисты вскоре с вами свяжутся и проконсультируют по всем вопросам</p>
+            </div>
+            <form class="popup__form form mb-20" action="#">  
+                <div class="form__wrapper mb-30">
+                    <div class="form__row">
+                        <div class="form__item">
+                            <div class="form__input">
+                                <input class="form__control form-control" placeholder="Имя" type="text">
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <div class="form__input">
+                                <select id="choice-popup-contry">
+                                <option data-countryflag="russia">Россия</option>
+                                <option data-countryflag="uzbekistan">Узбекистан</option>
+                            </select>
+                            <input class="form__control form-control" placeholder="+7 (999) 999-99-99" type="tel">
+                        </div>
+                        </div>
+                        <div class="form__item">
+                                <div class="form__input">
+                                    <input class="form__control form-control" placeholder="Ваш вопрос" type="text">
+                                </div>
+                        </div>
+                    
+                    </div>
+                </div>  
+                <button class="form__btn btn btn-any">Отправить заявку</button>
+            </form>
+            <div class="popup__any-text">
+                Нажимая кнопку “Отправить заявку” вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+    <!-- ?Основной контент -->
+    <main class="main main--ind">
+      <!-- Линии по побокам(Оболочка) -->
+      <div class="content-wrapper">
+        <!--? breadcrumb -->
+        <div class="breadcrumb mb-30">
+          <div class="container">
+            <nav aria-label="breadcrumb" class="breadcrumb__nav">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a href="index.html">Главная</a></li>
+                <li class="breadcrumb__item active">Аренда</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!--? Rent -->
+        <section class="rent mb-120">
+          <div class="container">
+            <div class="head mb-30">
+              <h1 class="head__title title title-primary">Аренда</h1>
+            </div>
+            <div class="rent__wrapper">
+              <div class="rent__floors floors-rent mb-60">
+                <div class="floors-rent__row">
+                  <div class="floors-rent__text">этаж</div>
+                  <div class="floors-rent__items">
+                    <div class="floors-pagination">
+                      <button class="floors-pagination__item js-tab-btn active" data-tab="#floors-1">1</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-2">2</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-3">3</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-4">4</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-5">5</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-6">6</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-7">7</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-8">8</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-9">9</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-10">10</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-11">11</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-12">12</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-13">13</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-14">14</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-16">16</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-17">17</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-18">18</button>
+                      <button class="floors-pagination__item js-tab-btn" data-tab="#floors-19">19</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="floors">
+                <div class="floors__wrapper">
+                  <div class="floors__container">
+                  <div class="floors__tabs tabs">
+                      <div class="floors__tabs-content tabs-content js-tab-content active" id="floors-1">
+                        <div class="floors__item">
+                            <img class="map" src="img/floors-image/floor.png" width="537px" height="480px" alt="" usemap="#floor-1">
+                            <map name="floor-1">
+                              <area data-zone="floor-1-zone-1" shape="poly" title="01A" alt="01A"
+                                coords="157,99,475,101,524,246,365,247,365,171,156,171">
+                              <area data-zone="floor-1-zone-2" shape="poly" title="01B" alt="01B"
+                                coords="362,467,362,394,288,394,288,417,246,418,247,469">
+                            </map>
+                        </div>
+                      </div>
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-2">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-2.png" width="537" height="480"
+                            alt="" usemap="#floor-2">
+                          <map name="floor-2">
+                            <area data-zone="floor-2-zone-1" shape="poly" title="02A" alt="02A"
+                              coords="72,11,270,11,270,96,271,101,182,101,182,191,71,191">
+                            <area data-zone="floor-2-zone-2" shape="poly" title="02B" alt="02B"
+                              coords="272,10,467,11,525,188,445,187,447,290,350,290,352,100,273,100">
+                            <area data-zone="floor-2-zone-3" shape="poly" title="02C" alt="02C"
+                              coords="15,292,101,292,101,379,42,379">
+                            <area data-zone="floor-2-zone-4" shape="poly" title="02D" alt="02D"
+                              coords="357,293,465,293,525,469,183,468,183,379,356,379">
+                          </map>
+                        </div>
+                      </div>
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-3">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-3.png" width="537" height="480"
+                            alt="" usemap="#floor-3">
+                          <map name="floor-3">
+                            <area data-zone="floor-3-zone-1"  shape="poly" coords="16,10,270,11,270,102,184,102,183,203,165,203,164,275,185,275,185,288,94,288,95,187,73,187,73,186" title="03A" alt="03A">
+                            <area data-zone="floor-3-zone-2"  shape="poly" coords="273,11,466,12,524,186,445,187,446,291,357,293,356,275,377,274,376,203,357,203,357,99,273,100"  title="03B" alt="03B">
+                            <area data-zone="floor-3-zone-3"  shape="poly" coords="15,291,104,291,104,287,183,287,184,379,240,380,239,468,73,467" title="03C" alt="03C">
+                            <area data-zone="floor-3-zone-4"  shape="poly" coords="357,293,466,292,525,467,240,467,240,384,274,384,273,378,357,379,357,378" title="03D" alt="03D">
+                          </map>
+                        </div>
+                      </div>
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-4">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-4.png" width="537" height="480"
+                            alt="" usemap="#floor-4">
+                          <map name="floor-4">
+                            <area data-zone="floor-4-zone-1" shape="poly" coords="16,11,270,11,271,102,354,103,355,179,330,179,330,123,252,124,252,178,223,179,222,123,209,123,208,296,183,297,184,379,240,380,240,468,74,467,15,291,95,291,94,187,73,187" title="04A" alt="04A">
+                            <area data-zone="floor-4-zone-2" shape="poly" coords="272,10,466,11,525,186,445,187,446,287,446,291,466,291,524,467,241,467,241,376,186,375,187,297,208,297,209,341,222,341,223,301,252,300,253,354,331,355,330,179,356,179,354,102,272,101" title="04B" alt="04B">
+                          </map>
+                        </div>
+                      </div>
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-5">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-5.png" width="537" height="480"
+                            alt="" usemap="#floor-5">
+                          <map name="floor-5">
+                            <area data-zone="floor-5-zone-1" shape="poly" coords="15,11,298,12,298,55,271,54,272,101,354,102,354,179,330,180,330,124,253,124,253,180,223,180,223,124,209,123,209,296,187,297,187,287,181,287,181,295,183,295,183,377,240,378,239,468,73,467,15,292,95,292,94,186,73,187" title="05A" alt="05A">
+                            <area data-zone="floor-5-zone-2" shape="poly" coords="298,11,467,12,525,189,445,187,446,291,466,291,525,468,240,468,241,377,183,377,184,296,210,296,210,340,223,340,222,300,252,300,253,348,254,354,331,354,330,179,354,179,354,101,272,100,271,54,298,54" title="05B" alt="05B">
+                          </map>
+                        </div>
+                      </div>
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-6">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-6.png" width="537" height="480"
+                            alt="" usemap="#floor-6">
+                          <map name="floor-6">
+                            <area data-zone="floor-6-zone-1" shape="poly" coords="15,11,298,12,298,55,271,54,272,101,354,102,354,179,330,180,330,124,253,124,253,180,223,180,223,124,209,123,209,296,187,297,187,287,181,287,181,295,183,295,183,377,240,378,239,468,73,467,15,292,95,292,94,186,73,187" title="06A" alt="06A">
+                            <area data-zone="floor-6-zone-2" shape="poly" coords="298,11,467,12,525,189,445,187,446,291,466,291,525,468,240,468,241,377,183,377,184,296,210,296,210,340,223,340,222,300,252,300,253,348,254,354,331,354,330,179,354,179,354,101,272,100,271,54,298,54" title="06B" alt="06B">
+                          </map>
+                        </div>
+                      </div> 
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-7">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-7.png" width="537" height="480"
+                            alt="" usemap="#floor-7">
+                          <map name="floor-7">
+                            <area data-zone="floor-7-zone-1" shape="poly" coords="16,11,270,11,271,102,354,103,355,179,330,179,330,123,252,124,252,178,223,179,222,123,209,123,208,296,183,297,184,379,240,380,240,468,74,467,15,291,95,291,94,187,73,187" title="07A" alt="07A">
+                            <area data-zone="floor-7-zone-2" shape="poly" coords="272,10,466,11,525,186,445,187,446,287,446,291,466,291,524,467,241,467,241,376,186,375,187,297,208,297,209,341,222,341,223,301,252,300,253,354,331,355,330,179,356,179,354,102,272,101" title="07B" alt="07B">
+                          </map>
+                        </div>
+                      </div> 
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-8">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-8.png" width="537" height="480"
+                            alt="" usemap="#floor-8">
+                          <map name="floor-8">
+                            <area data-zone="floor-8-zone-1" shape="poly" coords="16,11,270,11,271,102,354,103,355,179,330,179,330,123,252,124,252,178,223,179,222,123,209,123,208,296,183,297,184,379,241,380,241,468,74,467,15,291,95,291,94,187,73,187" title="08A" alt="08A">
+                            <area data-zone="floor-8-zone-2" shape="poly" coords="272,10,466,11,525,186,445,187,446,287,446,291,466,291,524,467,241,467,241,376,186,375,187,297,208,297,209,341,222,341,223,301,252,300,253,354,331,355,330,179,356,179,354,102,272,101" title="08B" alt="08B">
+                          </map>
+                        </div>
+                      </div> 
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-9">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-9.png" width="537" height="480"
+                            alt="" usemap="#floor-9">
+                          <map name="floor-9">
+                            <area data-zone="floor-9-zone-1" shape="poly" coords="16,11,281,11,281,102,354,103,355,179,330,179,330,123,252,124,252,178,223,179,222,123,209,123,208,296,183,297,184,379,241,380,241,468,74,467,15,291,95,291,94,187,73,187" title="09A" alt="09A">
+                            <area data-zone="floor-9-zone-2" shape="poly" coords="281,10,466,11,525,186,445,187,446,287,446,291,466,291,524,467,241,467,241,376,186,375,187,297,208,297,209,341,222,341,223,301,252,300,253,354,331,355,330,179,356,179,354,102,281,101" title="09B" alt="09B">
+                          </map>
+                        </div>
+                      </div> 
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-10">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-10.png" width="537" height="480"
+                            alt="" usemap="#floor-10">
+                          <map name="floor-10">
+                            <area data-zone="floor-10-zone-1" shape="poly" coords="16,11,281,11,281,102,354,103,355,179,330,179,330,123,252,124,252,178,223,179,222,123,209,123,208,296,183,297,184,379,241,380,241,468,74,467,15,291,95,291,94,187,73,187" title="010A" alt="010A">
+                            <area data-zone="floor-10-zone-2" shape="poly" coords="281,10,466,11,525,186,445,187,446,287,446,291,466,291,524,467,241,467,241,376,186,375,187,297,208,297,209,341,222,341,223,301,252,300,253,354,331,355,330,179,356,179,354,102,281,101" title="010B" alt="010B">
+                          </map>
+                        </div>
+                      </div> 
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-11">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-11.png" width="537" height="480"
+                            alt="" usemap="#floor-11">
+                          <map name="floor-11">
+                            <area data-zone="floor-11-zone-1" shape="poly" coords="17,12,268,12,267,100,184,102,186,205,164,204,164,274,187,275,186,290,96,290,95,187,73,187" title="011A" alt="011A">
+                            <area data-zone="floor-11-zone-2" shape="poly" coords="270,12,466,12,523,187,443,187,444,290,352,290,352,273,375,274,376,204,352,204,357,102,269,100" title="011B" alt="011B">
+                            <area data-zone="floor-11-zone-3" shape="poly" coords="356,292,466,292,524,467,75,468,17,293,183,291,183,378,356,378" title="011C" alt="011C">
+                          </map>
+                        </div>
+                      </div> 
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-12">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-12.png" width="537" height="480"
+                            alt="" usemap="#floor-12">
+                          <map name="floor-12">
+                            <area data-zone="floor-12-zone-1" shape="poly" coords="17,12,268,12,267,100,184,102,186,205,164,204,164,274,187,275,186,290,96,290,95,187,73,187" title="012A" alt="012A">
+                            <area data-zone="floor-12-zone-2" shape="poly" coords="270,12,466,12,523,187,443,187,444,290,352,290,352,273,375,274,376,204,352,204,357,102,269,100" title="012B" alt="012B">
+                            <area data-zone="floor-12-zone-3" shape="poly" coords="356,292,466,292,524,467,75,468,17,293,183,291,183,378,356,378" title="012C" alt="012C">
+                          </map>
+                        </div>
+                      </div> 
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-13">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-13.png" width="537" height="480"
+                            alt="" usemap="#floor-13">
+                          <map name="floor-13">
+                            <area data-zone="floor-13-zone-1" shape="poly" coords="16,11,283,11,282,97,283,100,183,101,182,205,164,204,164,274,182,275,181,290,96,290,94,187,72,187" title="013A" alt="013A">
+                            <area data-zone="floor-13-zone-2" shape="poly" coords="284,10,466,12,525,187,445,187,446,291,466,292,525,468,75,468,16,292,183,292,183,298,207,298,210,342,222,342,222,303,251,303,253,355,330,355,331,179,356,181,357,100,284,100" title="013B" alt="013B">
+                          </map>
+                        </div>
+                      </div> 
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-14">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-14.png" width="537" height="480"
+                            alt="" usemap="#floor-14">
+                          <map name="floor-14">
+                            <area data-zone="floor-14-zone-1" shape="poly" coords="13,9,284,10,283,101,354,100,354,180,329,180,329,124,252,124,252,179,221,179,221,145,209,145,209,300,190,300,188,362,189,376,216,377,216,383,272,384,272,425,299,425,299,469,72,469,14,290,94,290,94,188,73,188" title="014A" alt="014A">
+                            <area data-zone="floor-14-zone-2" shape="poly" coords="284,8,283,101,355,100,354,180,330,180,330,352,253,352,252,298,220,298,220,340,209,340,209,300,189,300,188,376,272,384,272,425,299,425,299,469,528,468,465,289,446,288,446,188,528,188,470,9" title="014B" alt="014B">
+                          </map>
+                        </div>
+                      </div> 
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-16">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-16.png" width="537" height="480"
+                            alt="" usemap="#floor-16">
+                          <map name="floor-16">
+                            <area data-zone="floor-16-zone-1" shape="poly" coords="15,11,468,12,528,189,330,190,331,123,208,123,208,300,184,300,185,377,230,378,230,468,72,468,15,292,95,291,92,186,72,185" title="016A" alt="016A">
+                            <area data-zone="floor-16-zone-2" shape="poly" coords="331,190,450,190,450,291,468,291,525,467,233,467,231,377,188,376,189,300,209,300,209,353,222,354,223,300,251,299,253,354,331,355" title="016B" alt="016B">
+                          </map>
+                        </div>
+                      </div> 
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-17">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-17.png" width="537" height="480"
+                            alt="" usemap="#floor-17">
+                          <map name="floor-17">
+                            <area data-zone="floor-17-zone-1" shape="poly" coords="16,12,74,187,96,187,96,292,16,292,73,466,75,469,239,468,237,376,186,377,186,299,209,299,208,124,223,125,222,179,252,180,253,124,329,124,331,180,353,179,352,102,283,101,282,9" title="017A" alt="017A">
+                            <area data-zone="floor-17-zone-2" shape="poly" coords="282,9,283,101,353,101,355,189,526,190,468,8" title="017B" alt="017B">
+                            <area data-zone="floor-17-zone-3" shape="poly" coords="329,179,355,179,355,189,445,190,445,291,466,291,524,469,239,471,237,376,186,377,187,298,209,299,209,341,222,341,221,298,253,298,254,352,330,353" title="017C" alt="017C">
+                          </map>
+                        </div>
+                      </div> 
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-18">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-18.png" width="537" height="480"
+                            alt="" usemap="#floor-18">
+                          <map name="floor-18">
+                            <area data-zone="floor-18-zone-1" shape="poly" coords="15,11,467,11,525,187,446,188,446,286,463,286,525,467,270,468,271,353,331,353,331,124,253,124,254,180,222,179,222,145,209,145,210,340,223,341,223,330,254,330,254,352,271,353,270,468,73,467,14,290,95,290,93,187,73,187" title="018A" alt="018A">
+                          </map>
+                        </div>
+                      </div> 
+                      <div class="floors__tabs-content tabs-content js-tab-content" id="floors-19">
+                        <div class="floors__item">
+                          <img class="map" src="img/floors-image/floor-19.png" width="537" height="480"
+                            alt="" usemap="#floor-19">
+                          <map name="floor-19">
+                            <area data-zone="floor-19-zone-1" shape="poly" coords="13,9,284,10,283,101,354,100,354,180,329,180,329,124,252,124,252,179,221,179,221,145,209,145,209,300,190,300,188,362,189,376,216,377,216,383,270,384,269,469,72,469,14,290,94,290,94,188,73,188" title="019A" alt="019A">
+                            <area data-zone="floor-19-zone-2" shape="poly" coords="284,8,283,101,355,100,354,180,330,180,330,352,253,352,252,298,220,298,220,340,209,340,209,300,189,300,188,376,270,377,269,470,528,468,465,289,446,288,446,188,528,188,470,9" title="019B" alt="019B">
+                          </map>
+                        </div>
+                      </div> 
+                  </div>
+                </div>
+                  <!-- Area с контентанми -->
+                  <div class="area">
+                    <!-- Floors-1 -->
+                    <div class="area-floors area-floor-1">
+                      <div class="area-block floor1-zone-1" data-id="floor-1-zone-1" style="display: none;">
+                        <div class="baloon"><b>01A</b><br>453 м<sup>2</sup><br><b>сдано</b>
+                        </div>
+                      </div>
+                      <div class="area-block floor1-zone-2" data-id="floor-1-zone-2" style="display: none;">
+                        <div class="baloon"><b>01B</b><br>105.8 м<sup>2</sup><br><b>сдано</b>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Floors-2 -->
+                    <div class="area-floors area-floor-2">
+                      <div class="area-block floor2-zone-1" data-id="floor-2-zone-1" style="display: none;">
+                        <div class="baloon"><b>02A</b><br>301.45 м<sup>2</sup><br><b>сдано</b></div>
+                      </div>
+                      <div class="area-block floor2-zone-2" data-id="floor-2-zone-2" style="display: none;">
+                        <div class="baloon"><b>02B</b><br>430.12 м<sup>2</sup><br><b>сдано</b></div>
+                      </div>
+                      <div class="area-block floor2-zone-3" data-id="floor-2-zone-3" style="display: none;">
+                        <div class="baloon"><b>02C</b><br>56.9 м<sup>2</sup><br><b>сдано</b></div>
+                      </div>
+                      <div class="area-block floor2-zone-4" data-id="floor-2-zone-4" style="display: none;">
+                        <div class="baloon"><b>02D</b><br>430.98 м<sup>2</sup><br><b>сдано</b></div>
+                      </div>
+                    </div>
+
+                     <!-- Floors-3 -->
+                     <div class="area-floors area-floor-3">
+                          <div class="area-block floor3-zone-1" data-id="floor-3-zone-1" style="display: none;">
+                            <div class="baloon"><b>03A</b><br>79.14 м<sup>2</sup><br><b>сдано</b></div>
+                          </div>
+                          <div class="area-block floor3-zone-2" data-id="floor-3-zone-2" style="display: none;">
+                            <div class="baloon"><b>03B</b><br>317.25 м<sup>2</sup><br><b>сдано</b></div>
+                          </div>
+                          <div class="area-block floor3-zone-3" data-id="floor-3-zone-3" style="display: none;">
+                            <div class="baloon"><b>03C</b><br>327.24 м<sup>2</sup><br><b>сдано</b></div>
+                          </div>
+                          <div class="area-block floor3-zone-4" data-id="floor-3-zone-4" style="display: none;">
+                            <div class="baloon"><b>03D</b><br>384.44 м<sup>2</sup><br><b>сдано</b></div>
+                          </div>
+                     </div>
+
+                     <!-- Floors-4 -->
+                     <div class="area-floors area-floor-4">
+                        <div class="area-block floor4-zone-1" data-id="floor-4-zone-1" style="display: none;">
+                          <div class="baloon"><b>04A</b><br>840.43 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor4-zone-2" data-id="floor-4-zone-2" style="display: none;">
+                          <div class="baloon"><b>04B</b><br>898.05 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                     </div>
+
+                     <!-- Floors-5 -->
+                     <div class="area-floors area-floor-5">
+                        <div class="area-block floor5-zone-1" data-id="floor-5-zone-1" style="display: none;">
+                          <div class="baloon"><b>05A</b><br>852.8 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor5-zone-2" data-id="floor-5-zone-2" style="display: none;">
+                          <div class="baloon"><b>05B</b><br>882.7 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                     </div>
+
+                     <!-- Floors-6 -->
+                     <div class="area-floors area-floor-6">
+                        <div class="area-block floor6-zone-1" data-id="floor-6-zone-1" style="display: none;">
+                          <div class="baloon"><b>06A</b><br>852.8 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor6-zone-2" data-id="floor-6-zone-2" style="display: none;">
+                          <div class="baloon"><b>06B</b><br>699.15 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                     </div>
+                   
+                     <!-- Floors-7 -->
+                     <div class="area-floors area-floor-7">
+                          <div class="area-block floor7-zone-1" data-id="floor-7-zone-1" style="display: none;">
+                            <div class="baloon"><b>07A</b><br>838.18 м<sup>2</sup><br><b>сдано</b></div>
+                          </div>
+                          <div class="area-block floor7-zone-2" data-id="floor-7-zone-2" style="display: none;">
+                            <div class="baloon"><b>07B</b><br>894 м<sup>2</sup><br><b>сдано</b></div>
+                          </div>
+                     </div>
+
+                     <!-- Floors-8 -->
+                     <div class="area-floors area-floor-8">
+                          <div class="area-block floor8-zone-1" data-id="floor-8-zone-1" style="display: none;">
+                            <div class="baloon"><b>08A</b><br>840.59 м<sup>2</sup><br><b>сдано</b></div>
+                          </div>
+                          <div class="area-block floor8-zone-2" data-id="floor-8-zone-2" style="display: none;">
+                            <div class="baloon"><b>08B</b><br>886.73 м<sup>2</sup><br><b>сдано</b></div>
+                          </div>
+                     </div>
+
+                     <!-- Floors-9 -->
+                     <div class="area-floors area-floor-9">
+                          <div class="area-block floor9-zone-1" data-id="floor-9-zone-1" style="display: none;">
+                            <div class="baloon"><b>09A</b><br>842.81 м<sup>2</sup><br><b>сдано</b></div>
+                          </div>
+                          <div class="area-block floor9-zone-2" data-id="floor-9-zone-2" style="display: none;">
+                            <div class="baloon"><b>09B</b><br>870.8 м<sup>2</sup><br><b>сдано</b></div>
+                          </div>
+                     </div>
+
+                     <!-- Floors-10 -->
+                     <div class="area-floors area-floor-10">
+                          <div class="area-block floor10-zone-1" data-id="floor-10-zone-1" style="display: none;">
+                            <div class="baloon"><b>10A</b><br>842.51 м<sup>2</sup><br><b>сдано</b></div>
+                          </div>
+                          <div class="area-block floor10-zone-2" data-id="floor-10-zone-2" style="display: none;">
+                            <div class="baloon"><b>10B</b><br>869.19 м<sup>2</sup><br><b>сдано</b></div>
+                          </div>
+                     </div>
+
+                     <!-- Floors-11 -->
+                     <div class="area-floors area-floor-11">
+                        <div class="area-block floor11-zone-1" data-id="floor-11-zone-1" style="display: none;">
+                          <div class="baloon"><b>11A</b><br>418.67 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor11-zone-2" data-id="floor-11-zone-2" style="display: none;">
+                          <div class="baloon"><b>11B</b><br>421.83 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor11-zone-3" data-id="floor-11-zone-3" style="display: none;">
+                          <div class="baloon"><b>11C</b><br>669.27 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                     </div>
+
+                     <!-- Floors-12 -->
+                     <div class="area-floors area-floor-12">
+                        <div class="area-block floor12-zone-1" data-id="floor-12-zone-1" style="display: none;">
+                          <div class="baloon"><b>12A</b><br>418.67 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor12-zone-2" data-id="floor-12-zone-2" style="display: none;">
+                          <div class="baloon"><b>12B</b><br>421.83 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor12-zone-3" data-id="floor-12-zone-3" style="display: none;">
+                          <div class="baloon"><b>12C</b><br>669.27 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                     </div>
+
+                     <!-- Floors-13 -->
+                     <div class="area-floors area-floor-13">
+                        <div class="area-block floor13-zone-1" data-id="floor-13-zone-1" style="display: none;">
+                          <div class="baloon"><b>13A</b><br>431.88 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor13-zone-2" data-id="floor-13-zone-2" style="display: none;">
+                          <div class="baloon"><b>13B</b><br>1176.07 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                     </div>
+
+                      <!-- Floors-14 -->
+                     <div class="area-floors area-floor-14">
+                        <div class="area-block floor14-zone-1" data-id="floor-14-zone-1" style="display: none;">
+                          <div class="baloon"><b>14A</b><br>865.97 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor14-zone-2" data-id="floor-14-zone-2" style="display: none;">
+                          <div class="baloon"><b>14B</b><br>865.49 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                     </div>
+
+                      <!-- Floors-16 -->
+                      <div class="area-floors area-floor-16">
+                        <div class="area-block floor16-zone-1" data-id="floor-16-zone-1" style="display: none;">
+                          <div class="baloon"><b>16A</b><br><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor16-zone-2" data-id="floor-16-zone-2" style="display: none;">
+                          <div class="baloon"><b>16B</b><br>523 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                     </div>
+
+                      <!-- Floors-17 -->
+                      <div class="area-floors area-floor-17">
+                        <div class="area-block floor17-zone-1" data-id="floor-17-zone-1" style="display: none;">
+                          <div class="baloon"><b>17A</b><br>943.6 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor17-zone-2" data-id="floor-17-zone-2" style="display: none;">
+                          <div class="baloon"><b>17B</b><br>327 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor17-zone-3" data-id="floor-17-zone-3" style="display: none;">
+                          <div class="baloon"><b>17C</b><br>523 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                     </div>
+                    
+                      <!-- Floors-18 -->
+                      <div class="area-floors area-floor-18">
+                        <div class="area-block floor18-zone-1" data-id="floor-18-zone-1" style="display: none;">
+                          <div class="baloon"><b>18A</b><br>1796.51 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                     </div>
+
+                      <!-- Floors-19 -->
+                      <div class="area-floors area-floor-19">
+                        <div class="area-block floor19-zone-1" data-id="floor-19-zone-1" style="display: none;">
+                          <div class="baloon"><b>19A</b><br>840.43 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                        <div class="area-block floor19-zone-2" data-id="floor-19-zone-2" style="display: none;">
+                          <div class="baloon"><b>19B</b><br>898.05 м<sup>2</sup><br><b>сдано</b></div>
+                        </div>
+                     </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <!--? Prom -->
+        <section class="prom pb-120">
+          <div class="container">
+            <div class="head mb-30">
+              <h2 class="head__title title title-primary">реклама</h2>
+              <p>Варианты размещения рекламы</p>
+            </div>
+            <div class="grid grid-primary">
+              <div class="grid__item">
+                <div class="any-card bg-image" style="background-image: url(img/prom/prom-image-1.jpg);">
+                  <div class="any-card__content">
+                    <div class="any-card__number">/01</div>
+                    <div class="any-card__text">Реклама на парковках</div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="any-card bg-image" style="background-image: url(img/prom/prom-image-2.jpg);">
+                  <div class="any-card__content">
+                    <div class="any-card__number">/02</div>
+                    <div class="any-card__text">Реклама в лифтах</div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid__item">
+                <div class="any-card bg-image" style="background-image: url(img/prom/prom-image-3.jpg);">
+                  <div class="any-card__content">
+                    <div class="any-card__number">/03</div>
+                    <div class="any-card__text">Интеграция в навигацию</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+      <!--? Text block  -->
+      <section class="text-block text-block--gradient bg-image"
+        style="background-image: url(img/text-block/bg-text-block.png);">
+        <div class="text-block__container container">
+          <div class="text-block__content">
+            Бизнес центр <span class="text-block__any">«Алгоритм»</span> — идеальное место <span
+              class="text-block__any">для размещения рекламы</span> товаров и услуг премиум класса
+          </div>
+          <div class="text-block__social">
+            <div class="social">
+              <a href="#" class="social__item"><span class="i-telegram"></span></a>
+              <a href="#" class="social__item"><span class="i-vk"></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="content-wrapper">
+        <!--? Claim -->
+        <section class="claim mb-60">
+          <div class="container">
+            <div class="claim__content bg-image" style="background-image: url(img/claim/claim-bg.png);">
+              <div class="claim__image">
+                <img src="img/claim/claim-rocket.svg" width="90" height="90" alt="">
+              </div>
+              <div class="claim__head head mb-40">
+                <h3 class="claim__title title title-any">оставить заявку на рекламу</h3>
+                <p>Оставьте свои контактные данные в форме заявки ниже. Наши специалисты подберут для вас подходящий
+                  формат рекламы и сориентируют по стоимости.</p>
+              </div>
+              <form class="claim__form form" action="#">
+                <div class="form__wrapper mb-20">
+                  <div class="form__row">
+                    <div class="form__item">
+                      <div class="form__input">
+                        <input class="form__control form-control" placeholder="Имя" type="text">
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <div class="form__input">
+                        <select id="choice-country">
+                          <option data-countryflag="russia">Россия</option>
+                          <option data-countryflag="uzbekistan">Узбекистан</option>
+                        </select>
+                        <input class="form__control form-control" placeholder="+7 (999) 999-99-99" type="tel">
+                      </div>
+                    </div>
+                    <div class="form__item">
+                      <button class="form__btn btn btn-primary">Отправить заявку</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__politic">Нажимая кнопку “Отправить заявку” вы соглашаетесь с <a href="#">политикой
+                    конфиденциальности</a></div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!--? Contacts -->
+        <section class="info">
+          <div class="info__top">
+            <div class="container">
+              <div class="info__top-row">
+                <div class="info__logo logo">
+                  <a href="index.html" class="logo__wrap">
+                    <img src="img/logo.png" width="170" height="77" alt="">
+                  </a>
+                </div>
+                <nav class="info__nav nav-info">
+                  <div class="nav-info__row">
+                    <div class="nav-info__item">
+                      <a href="#">О центре</a>
+                      <a href="#">Аренда и реклама</a>
+                    </div>
+                    <div class="nav-info__item">
+                      <a href="#">Часы работы</a>
+                      <a href="#">Контакты</a>
+                    </div>
+                    <div class="nav-info__item">
+                      <a href="#">Как добраться?</a>
+                      <a href="#">Паркинг</a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+
+          </div>
+          <div class="info__bottom-row">
+            <div class="info__item">
+              <div class="info__item-block">
+                <span class="info__item-icon i-location"></span>
+                <p>Ул. Академика Пилюгина, д. 22</p>
+              </div>
+            </div>
+            <div class="info__item">
+              <div class="info__item-block">
+                <span class="info__item-icon i-convert"></span>
+                <a href="mailto:info@algorithm-centre.ru">info@algorithm-centre.ru</a>
+              </div>
+            </div>
+            <div class="info__item">
+              <a href="tel:+7(495)9090080" class="info__item-tel">+7 (495) 909 00 80</a>
+            </div>
+            <div class="info__item info__item--none">
+              <div class="social">
+                <a href="#" class="social__item"><span class="i-telegram"></span></a>
+                <a href="#" class="social__item"><span class="i-vk"></span></a>
+                <a href="#" class="social__item"><span class="i-twitter"></span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- ?Подключение Footer -->
+    <footer class="footer">
+    <div class="container">
+        
+    </div>
+</footer>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=b6a870ec-d914-424a-a003-b2d702a5d3db&amp;lang=ru_RU" type="text/javascript"></script>
+<script src="libs/jquery.maphilight.js"></script>
+<script src="libs/select2.min.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+ <script >
+    var myMap;
+    ymaps.ready(init);
+    function init() {
+        myMap = new ymaps.Map('map', {
+            center: [41.28496400103806, 69.25303541677091], 
+            zoom: 17, 
+          }, 
+          {
+            searchControlProvider: 'yandex#search'
+          });
+         
+           myCollectionPin = new ymaps.GeoObjectCollection({}, {
+              iconLayout: 'default#image',
+              iconImageHref: 'img/metka.png',
+              iconImageSize: [40, 55],
+          });
+           var mainLocation = [
+             {
+              coords: [41.28496400103806, 69.25303541677091],
+              hintContent: 'Алгоритм',
+              ballonContentText: 'Алгоритм'
+             },
+          ]
+          mainLocation.forEach(el => {
+            var mark = new ymaps.Placemark(el.coords, {
+              hintContent: el.hintContent,
+              balloonContent: `<span class="text">${el.ballonContentText}</span>`,
+            });
+            myCollectionPin.add(mark)
+          });
+          myMap.geoObjects.add(myCollectionPin);  
+      }
+</script> 
+</body>
+
+</html>
